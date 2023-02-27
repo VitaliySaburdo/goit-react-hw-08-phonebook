@@ -34,6 +34,7 @@ export const Input = styled.input`
   border-radius: 4px;
   cursor: pointer;
   font-size: 15px;
+  /* background-color: #7fcfff; */
 `;
 
 export const Button = styled.button`

@@ -13,7 +13,7 @@ export const RegisterForm = () => {
     const password = form.elements.password.value;
 
     if (name === '' || email === '' || password === '') {
-      alert('Please enter data');
+      alert('Fill in all fields please');
     }
     dispatch(
       register({

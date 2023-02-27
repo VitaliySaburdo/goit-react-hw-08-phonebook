@@ -8,10 +8,15 @@ export const LoginForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.currentTarget;
+    const email = form.elements.email.value;
+    const password = form.elements.password.value;
+    if (email === '' || password === '') {
+      alert('Fill in all fields please');
+    }
     dispatch(
       logIn({
-        email: form.elements.email.value,
-        password: form.elements.password.value,
+        email: email,
+        password: password,
       })
     );
     form.reset();
