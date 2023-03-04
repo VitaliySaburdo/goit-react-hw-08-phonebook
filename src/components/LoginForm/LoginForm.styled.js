@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import background from '../../images/Log.webp';
+import { Form, Field } from 'formik';
 
-export const Form = styled.form`
+export const Forma = styled(Form)`
   margin-top: 230px;
   margin-bottom: 30px;
   width: 320px;
@@ -31,7 +32,7 @@ export const Box = styled.div`
   justify-content: center;
 `;
 
-export const Input = styled.input`
+export const Input = styled(Field)`
   display: block;
   margin-left: auto;
   margin-right: auto;
