@@ -11,6 +11,7 @@ import {
 } from './LoginForm.styled';
 import { Formik, ErrorMessage } from 'formik';
 import { object, string } from 'yup';
+// import TextField from '@mui/material/TextField';
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
@@ -24,7 +25,6 @@ export const LoginForm = () => {
 
   const handleSubmit = (values, { resetForm }) => {
     dispatch(logIn({ values }));
-    console.log(values);
     const { email, password } = values;
     if (email === '' || password === '') {
       alert('Fill all the fields');
@@ -42,7 +42,9 @@ export const LoginForm = () => {
         <Forma autoComplete="on">
           <Label>
             Email
+            {/* <TextField label="email"> */}
             <Input type="email" name="email" />
+            {/* </TextField> */}
             <ErrorMessage component={MassageEmail} name="email" />
           </Label>
           <Label>

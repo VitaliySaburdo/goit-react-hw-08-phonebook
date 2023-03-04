@@ -10,7 +10,7 @@ export const Forma = styled(Form)`
   border-radius: 5px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   background-color: #5eceff;
-  padding: 10px;
+  padding: 20px;
 `;
 
 export const Label = styled.label`
