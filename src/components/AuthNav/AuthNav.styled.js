@@ -7,7 +7,7 @@ export const NavbarLink = styled(NavLink)`
   padding: 12px;
   font-family: 'Roboto';
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.3;
   text-align: center;
   color: #2a363b;
