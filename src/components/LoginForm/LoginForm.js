@@ -11,7 +11,7 @@ import {
 } from './LoginForm.styled';
 import { Formik, ErrorMessage } from 'formik';
 import { object, string } from 'yup';
-// import TextField from '@mui/material/TextField';
+import TextField from '@mui/material/TextField';
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
@@ -42,9 +42,7 @@ export const LoginForm = () => {
         <Forma autoComplete="on">
           <Label>
             Email
-            {/* <TextField label="email"> */}
             <Input type="email" name="email" />
-            {/* </TextField> */}
             <ErrorMessage component={MassageEmail} name="email" />
           </Label>
           <Label>
