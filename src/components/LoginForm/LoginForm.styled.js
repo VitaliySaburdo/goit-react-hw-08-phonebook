@@ -14,9 +14,23 @@ export const Forma = styled(Form)`
 `;
 
 export const Label = styled.label`
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+`;
+
+export const MassageEmail = styled.span`
+  position: absolute;
+  color: #f75761;
+  top: 55px;
+  left: 0;
+`;
+export const MassagePass = styled.span`
+  position: absolute;
+  color: #f75761;
+  top: 55px;
+  left: 0;
 `;
 
 export const Box = styled.div`
