@@ -1,5 +1,9 @@
-import { Box } from './Container.styled';
+import { Box, Shell } from './Container.styled';
 
 export const Container = ({ children }) => {
-  return <Box>{children}</Box>;
+  return (
+    <Shell>
+      <Box>{children}</Box>;
+    </Shell>
+  );
 };
