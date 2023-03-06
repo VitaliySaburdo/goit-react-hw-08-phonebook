@@ -38,12 +38,12 @@ export const LoginForm = () => {
       <Form onSubmit={formik.handleSubmit}>
         <TextField
           sx={{
-            color: 'success.main',
+            height: 70,
           }}
           placeholder="Please your email"
           fullWidth
           size="small"
-          margin="normal"
+          margin="none"
           id="email"
           name="email"
           label="Email"
@@ -53,10 +53,11 @@ export const LoginForm = () => {
           helperText={formik.touched.email && formik.errors.email}
         />
         <TextField
+          sx={{ height: 70 }}
           placeholder="Please your password"
           fullWidth
           size="small"
-          margin="normal"
+          margin="none"
           id="password"
           name="password"
           label="Password"
@@ -66,8 +67,14 @@ export const LoginForm = () => {
           error={formik.touched.password && Boolean(formik.errors.password)}
           helperText={formik.touched.password && formik.errors.password}
         />
-        <Button color="primary" variant="contained" fullWidth type="submit">
-          Submit
+        <Button
+          // sx={{ border: '1px solid', borderRadius: '25px' }}
+          color="primary"
+          variant="contained"
+          fullWidth
+          type="submit"
+        >
+          Login
         </Button>
       </Form>
     </Box>

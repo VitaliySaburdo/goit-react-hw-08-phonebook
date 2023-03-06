@@ -40,6 +40,9 @@ export const Input = styled.input`
 
 export const Button = styled.button`
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
   width: 180px;
   height: 40px;
   cursor: pointer;

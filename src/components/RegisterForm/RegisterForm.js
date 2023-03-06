@@ -39,13 +39,11 @@ export const RegisterForm = () => {
     <Box>
       <Form onSubmit={formik.handleSubmit}>
         <TextField
-          sx={{
-            color: 'success.main',
-          }}
+          sx={{ height: 70 }}
           placeholder="Please your name"
           fullWidth
           size="small"
-          margin="normal"
+          margin="none"
           id="name"
           name="name"
           label="Name"
@@ -55,13 +53,11 @@ export const RegisterForm = () => {
           helperText={formik.touched.name && formik.errors.name}
         />
         <TextField
-          sx={{
-            color: 'success.main',
-          }}
+          sx={{ height: 70 }}
           placeholder="Please your email"
           fullWidth
           size="small"
-          margin="normal"
+          margin="none"
           id="email"
           name="email"
           label="Email"
@@ -71,10 +67,11 @@ export const RegisterForm = () => {
           helperText={formik.touched.email && formik.errors.email}
         />
         <TextField
+          sx={{ height: 70 }}
           placeholder="Please your password"
           fullWidth
           size="small"
-          margin="normal"
+          margin="none"
           id="password"
           name="password"
           label="Password"
@@ -85,7 +82,7 @@ export const RegisterForm = () => {
           helperText={formik.touched.password && formik.errors.password}
         />
         <Button color="primary" variant="contained" fullWidth type="submit">
-          Submit
+          Register
         </Button>
       </Form>
     </Box>

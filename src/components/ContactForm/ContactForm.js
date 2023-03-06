@@ -3,7 +3,7 @@ import {
   Container,
   Title,
   Form,
-  Input,
+  // Input,
   Label,
   Button,
 } from './ContactForm.styled';
@@ -11,6 +11,7 @@ import { addContact } from '../../redux/contacts/operations';
 import { useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
 import { selectContacts } from 'redux/contacts/selectors';
+import TextField from '@mui/material/TextField';
 
 export function ContactForm() {
   const [name, setName] = useState('');
@@ -61,10 +62,12 @@ export function ContactForm() {
       <Title>Phonebook</Title>
       <Form onSubmit={handleSubmit}>
         <Label>
-          Name
-          <Input
+          <TextField
+            fullWidth
+            size="small"
             type="text"
             name="name"
+            label="Name"
             value={name}
             onChange={handleNameChange}
             pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -73,13 +76,17 @@ export function ContactForm() {
           />
         </Label>
         <Label>
-          Number
-          <Input
+          <TextField
+            fullWidth
+            size="small"
             type="tel"
             name="number"
+            label="Number"
             value={number}
             onChange={handleNameChange}
-            pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+            pattern="\d{1,5}"
+            minlength="7"
+            maxlength="12"
             title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
             required
           />
