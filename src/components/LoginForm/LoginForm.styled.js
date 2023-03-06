@@ -8,8 +8,8 @@ export const Form = styled.form`
   width: 320px;
   border-radius: 5px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  background-color: #5eceff;
-  padding: 10px;
+  background-color: #d7daec;
+  padding: 15px;
 `;
 
 export const Box = styled.div`
@@ -37,27 +37,4 @@ export const Input = styled(Field)`
   cursor: pointer;
   font-size: 15px;
   background-color: #aae5ff;
-`;
-
-export const Button = styled.button`
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 120px;
-  height: 30px;
-  cursor: pointer;
-  font-size: 16px;
-  color: white;
-  background-color: green;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  outline: none;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover {
-    background-color: #13ba00;
-  }
 `;

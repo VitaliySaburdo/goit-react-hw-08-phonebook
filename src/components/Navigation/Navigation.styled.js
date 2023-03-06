@@ -10,11 +10,10 @@ export const NavbarLink = styled(NavLink)`
   font-size: 18px;
   line-height: 1.3;
   text-align: center;
-  color: #2a363b;
+  color: #1976d2;
 
   &.active {
     position: relative;
-    color: blue;
     &::after {
       content: '';
       position: absolute;
@@ -25,7 +24,7 @@ export const NavbarLink = styled(NavLink)`
       width: 100%;
       height: 4px;
       border-radius: 2px;
-      background-color: blue;
+      background-color: #1976d2;
     }
   }
 `;

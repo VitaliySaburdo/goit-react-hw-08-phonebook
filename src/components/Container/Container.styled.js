@@ -9,5 +9,5 @@ export const Box = styled.div`
   padding: 10px;
   border-radius: 5px;
   border: 1px solid blue;
-  /* background-color: #5eceff; */
+  background-color: #d7daec;
 `;
