@@ -22,6 +22,7 @@ export const Container = styled.div`
 
 export const Title = styled.p`
   font-weight: 700;
+  font-size: 28px;
 `;
 
 export const Input = styled.input`

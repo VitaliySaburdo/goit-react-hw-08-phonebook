@@ -6,13 +6,14 @@ export const Wrapper = styled.div`
   gap: 12px;
 `;
 export const UserName = styled.p`
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 18px;
 `;
 
 export const Button = styled.button`
   display: block;
   width: 120px;
-  height: 30px;
+  height: 35px;
   cursor: pointer;
   font-size: 16px;
   color: white;

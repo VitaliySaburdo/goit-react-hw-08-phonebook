@@ -58,7 +58,7 @@ export function ContactForm() {
 
   return (
     <Container>
-      <Title>Your contacts</Title>
+      <Title>Phonebook</Title>
       <Form onSubmit={handleSubmit}>
         <Label>
           Name
