@@ -39,7 +39,7 @@ export const RegisterForm = () => {
     <Box>
       <Form onSubmit={formik.handleSubmit}>
         <TextField
-          sx={{ height: 70 }}
+          sx={{ height: 65 }}
           placeholder="Please your name"
           fullWidth
           size="small"
@@ -53,7 +53,7 @@ export const RegisterForm = () => {
           helperText={formik.touched.name && formik.errors.name}
         />
         <TextField
-          sx={{ height: 70 }}
+          sx={{ height: 65 }}
           placeholder="Please your email"
           fullWidth
           size="small"
@@ -67,7 +67,7 @@ export const RegisterForm = () => {
           helperText={formik.touched.email && formik.errors.email}
         />
         <TextField
-          sx={{ height: 70 }}
+          sx={{ height: 65 }}
           placeholder="Please your password"
           fullWidth
           size="small"

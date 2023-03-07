@@ -38,7 +38,7 @@ export const LoginForm = () => {
       <Form onSubmit={formik.handleSubmit}>
         <TextField
           sx={{
-            height: 70,
+            height: 65,
           }}
           placeholder="Please your email"
           fullWidth
@@ -53,7 +53,7 @@ export const LoginForm = () => {
           helperText={formik.touched.email && formik.errors.email}
         />
         <TextField
-          sx={{ height: 70 }}
+          sx={{ height: 65 }}
           placeholder="Please your password"
           fullWidth
           size="small"
