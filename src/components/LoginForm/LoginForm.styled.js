@@ -26,6 +26,12 @@ export const Box = styled.div`
   justify-content: center;
 `;
 
+export const Title = styled.h2`
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid silver;
+`;
+
 export const Input = styled(Field)`
   display: block;
   margin-left: auto;

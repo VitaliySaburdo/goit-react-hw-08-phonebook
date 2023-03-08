@@ -5,7 +5,7 @@ import * as yup from 'yup';
 import Button from '@mui/material/Button';
 import { logIn } from 'redux/auth/operations';
 import { useDispatch } from 'react-redux';
-import { Form, Box } from './LoginForm.styled';
+import { Form, Box, Title } from './LoginForm.styled';
 import TextField from '@mui/material/TextField';
 
 const validationSchema = yup.object({
@@ -36,6 +36,7 @@ export const LoginForm = () => {
   return (
     <Box>
       <Form onSubmit={formik.handleSubmit}>
+        <Title>Login</Title>
         <TextField
           sx={{
             height: 65,

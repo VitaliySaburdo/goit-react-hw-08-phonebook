@@ -5,7 +5,7 @@ import * as yup from 'yup';
 import Button from '@mui/material/Button';
 import { register } from 'redux/auth/operations';
 import { useDispatch } from 'react-redux';
-import { Form, Box } from './RegisterForm.styled';
+import { Form, Box, Title } from './RegisterForm.styled';
 import TextField from '@mui/material/TextField';
 
 const validationSchema = yup.object({
@@ -38,6 +38,7 @@ export const RegisterForm = () => {
   return (
     <Box>
       <Form onSubmit={formik.handleSubmit}>
+        <Title>Register</Title>
         <TextField
           sx={{ height: 65 }}
           placeholder="Please your name"
@@ -81,7 +82,13 @@ export const RegisterForm = () => {
           error={formik.touched.password && Boolean(formik.errors.password)}
           helperText={formik.touched.password && formik.errors.password}
         />
-        <Button color="primary" variant="contained" fullWidth type="submit">
+        <Button
+          sx={{ marginTop: '10px' }}
+          color="primary"
+          variant="contained"
+          fullWidth
+          type="submit"
+        >
           Register
         </Button>
       </Form>
